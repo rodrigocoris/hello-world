@@ -1,0 +1,1321 @@
+/* Todo el CSS de Rodri siguiente como plantilla y usando las variables predefinidas */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'Formula 1';
+    src: url('../fonts/Formula1-Regular-1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cascadia';
+    src: url('../fonts/Cascadia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-1: #FFFFFF;
+    --background-2: #F8F9FA;
+    --background-3: #272535;
+    --background-4: #1E1F29;
+    --background-5: #14141E;
+    --background-6: #121417;
+    --background-7: #0D0D11;
+    --background-8: #000000;
+    --background-9: #202020;
+    --background-10: #FBF7F7;
+    --background-11: #272822;
+
+    --color-1: #FFFFFF;
+    --color-2: #E61A4F;
+    --color-3: #911444;
+    --color-4: #195AA6;
+    --color-5: #CFCFD2;
+    --color-6: #646464;
+    --color-7: #7C828D;
+    --color-8: #292D34;
+    --color-9: #000000;
+    --color-10: #666f8d;
+    --color-11: #272822;
+    --color-12: #1E1F29;
+    --color-13: #007bff;
+    --color-14: #666F8D;
+    --color-15: #DCE9FF;
+    --color-16: #5F58FF;
+    --color-17: #D438BD;
+    --color-18: #5BD9EF;
+    --color-19: #AE76C6;
+    --color-20: #E6DB74;
+    --color-21: #32C766;
+    --color-22: #145C33;
+
+    --position-triangle: -310px;
+
+    --border-radius-1: 5px;
+    --border-radius-2: 15px;
+    --border-radius-3: 25px;
+}
+
+.button-6-new {
+    border-radius: 4px;
+    border: 2.5px solid var(--color-2);
+    color: var(--color-2);
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: -15px;
+    padding: 15px 30px;
+    box-shadow: 0px 10px 25px #e6114d4f;
+    transition: all 300ms;
+    background-color: var(--background-1);
+}
+
+.button-6-new:hover {
+    font-size: 15px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+
+body {
+    width: 100%;
+    font-family: 'Formula 1', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--background-2);
+}
+
+.mi-div {
+    background-color: #F8F9FA; /* Aquí especificas el color que deseas */
+}
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 2px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    background-color: var(--background-10);
+}
+
+
+/*error 404*/
+
+.container-error-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+    background-color: #1E1F29;
+    /* Asignar el background de color negro */
+    
+}
+
+.container-error-404 h1,
+.container-error-404 h2,
+.container-error-404 h6 {
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+    margin-left: -300px;
+}
+
+.container-error-404 h1 {
+    font-size: 5vw;
+    margin-top: 5vh;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container-error-404 h2 {
+    font-size: 2.5vw;
+}
+
+.container-error-404 h6,
+.container-error-404 a{
+    font-size: 1vw;
+    text-decoration: underline;
+    margin-left: -160px;/*sjustar hacia la izquierda*/
+    padding-top: 20px;/*sjustar hacia arriba*/
+    color: white;
+    text-decoration: underline;
+}
+
+.container-error-404 .letters {
+    color: rgb(230, 17, 79);
+}
+
+/* Efecto */
+.image-container-effect img {
+    max-width: 30%;
+    height: auto;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+/* Astro */
+.image-container-astro img {
+    max-width: 12%;
+    height: auto;
+    position: absolute;
+    top: 68%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*error 403*/
+
+.container-error-403 {
+    text-align: center;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #1E1F29;/*asignar el background de color negro*******************************/
+}
+.container-error-403 h1 {
+    font-size: 5em;
+    margin-top: 20vh;
+    color: white;
+    font-weight: bold; /* Hace el texto más grueso */
+}
+.container-error-403 h2 {
+    font-size: 3em;
+    color: white;
+}
+.container-error-403 a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: underline;
+}
+
+.container-error-403 h6 {
+    font-size: 1vw;
+    text-decoration: underline;
+    margin-left: -20px;/*sjustar hacia la izquierda*/
+    padding-top: 20px;/*sjustar hacia arriba*/
+    color: white;
+    text-decoration: underline;
+}
+
+.container-error-403 .letters {
+    color: rgb(230, 17, 79);
+}
+
+/* error 500*/
+.container-error-500 {
+    text-align: center;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #1E1F29;/*asignar el background de color negro*******************************/
+}
+.container-error-500 h1 {
+    font-size: 5em;
+    margin-top: 20vh;/*espacio entre barra de navegacion y texto*/
+    color: white;
+    font-weight: bold; /* Hace el texto más grueso */
+}
+.container-error-500 h2 {
+    font-size: 2.5em;
+    color: white;
+}
+.container-error-500 h3 {
+    font-size: 1.6em;
+    color: white;
+    padding-top: 20px;/*sjustar hacia arriba*/
+}
+.container-error-500 a {
+    font-size: 1.1em;
+    color: white;
+    text-decoration: underline;
+}
+
+.container-error-500 h6 {
+    font-size: 1vw;
+    text-decoration: underline;
+    margin-left: -20px;/*sjustar hacia la izquierda*/
+    padding-top: 20px;/*sjustar hacia arriba*/
+    color: white;
+    text-decoration: underline;
+}
+.container-error-500 .letters {
+    color: rgb(230, 17, 79);
+}
+
+/*--------------------------------------------------------------------------*/
+/*------------------------Contenido-----------------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+/*Primera seccion*************************************/
+/* General styles for section-material */
+.section-material {
+    margin: auto;
+    padding-top: 50px;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Headings and text styling */
+.section-material h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.section-material h5,
+.section-material h6 {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    text-align: left; /* Mantener el subtítulo alineado a la izquierda */
+}
+
+.description-title {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Description box styling */
+.description-container {
+    width: 55%; /* Reducir el ancho a 80% */
+    padding: 20px;
+    background-color: var(--background-1);
+    border-radius: var(--border-radius-2);
+    border: 1px solid var(--color-5);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.description-container:hover {
+    transform: scale(1.02);
+}
+
+/* Right align text */
+.right-align {
+    text-align: right;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* Decorative line under description */
+.description-rect {
+    border-bottom: 4.5px solid var(--color-2);
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Responsiveness for various screen sizes */
+@media (max-width: 1200px) {
+    .section-material {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-material {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section-material h2 {
+        font-size: 2rem;
+    }
+
+    .description-container {
+        width: 90%; /* Ajustar el ancho en pantallas más pequeñas */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-material {
+        padding-top: 20px;
+    }
+
+    .section-material h2 {
+        font-size: 1.8rem;
+    }
+
+    .description-container {
+        width: 100%; /* Ancho completo en pantallas móviles */
+        padding: 10px;
+    }
+
+    .right-align {
+        font-size: 0.9rem;
+    }
+}
+
+/*Segunda seccion*************************************/
+/* Sección principal */
+.section-landingpage-new {
+    margin: auto;
+    padding-top: 185px;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    padding: 0 15px; /* Agregar padding para márgenes en pantallas pequeñas */
+    margin-top: 30px;/*Espacio entre la seccion 1 y seccion 2*/
+    padding-bottom: 40px;/*Espacio entre el footer y la seccion 2*/
+}
+
+/* Contenedor principal */
+.landing-container-content-new {
+    width: 100%;
+    height: auto;
+    padding: 35px;
+    background-color: var(--background-1);
+    border-radius: var(--border-radius-2);
+    border: 1px solid var(--color-5);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+/* Cabecera */
+.landing-content-header-new {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+}
+
+/*Barra de titulo sin progreso********************************************/
+.landing-content-header-title-new {
+    /*linea roja que divide el titulo del resto*/
+    /*border-bottom: 4.5px solid var(--color-2);*/
+    flex: 1;
+    margin-right: 15px; /* Espacio entre la barra y los botones */
+}
+
+.landing-content-header-buttons-new {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 150px;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan naturalmente */
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+}
+
+/* Botones en la cabecera */
+.landing-content-header-buttons-new .button-6,
+.landing-content-header-buttons-new .button-6-new,
+.landing-content-header-buttons-new .button-5 {
+    padding: 10px 35px;
+    min-width: 150px; /* Ancho mínimo para ambos botones */
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0; /* Eliminar márgenes superiores o inferiores */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .landing-content-header-new {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px; /* Espacio entre la barra y los botones en pantallas pequeñas */
+    }
+
+    .landing-content-header-buttons-new {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px; /* Espacio entre los botones en pantallas pequeñas */
+    }
+
+    .landing-content-header-buttons-new .button-6,
+    .landing-content-header-buttons-new .button-6-new,
+    .landing-content-header-buttons-new .button-5 {
+        width: 100%; /* Hacer que los botones ocupen el ancho completo en pantallas pequeñas */
+        padding: 10px 0; /* Ajustar padding para que se adapte mejor en pantallas pequeñas */
+        min-width: 0; /* Permitir que los botones se ajusten al ancho disponible */
+    }
+}
+
+/* Estilos para la sección del cuerpo si es necesario */
+.landing-content-body-new .button-6,
+.landing-content-body-new .button-5 {
+    margin-top: 0; /* Eliminar márgenes superiores en el cuerpo */
+    padding: 10px 25px; /* Ajustar padding según sea necesario */
+}
+
+@media (max-width: 768px) {
+    .landing-content-body-new .button-6,
+    .landing-content-body-new .button-6-new,
+    .landing-content-body-new .button-5 {
+        width: 100%; /* Hacer que los botones ocupen el ancho completo en pantallas pequeñas */
+    }
+}
+
+/* Cuerpo */
+.landing-content-body-new {
+    display: grid;
+    grid-template-columns: calc(30% - 7.5px) calc(70% - 7.5px);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    .landing-content-body-new {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
+
+/* Tabla de contenido (panel izquierdo) */
+.landing-content-text-new {
+    width: 100%;
+    height: 450px;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .landing-content-text-new {
+        height: auto; /* Ajustar altura para pantallas pequeñas */
+    }
+}
+
+/* Lista de capítulos */
+.landing-chapters-list-new {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.landing-chapters-list-new li {
+    padding: 3.5px 5px;
+    border-left: 3.5px solid transparent;
+    transition: all .3s;
+}
+
+.landing-chapters-list-new li:hover, .chapter-selected {
+    border-left: 3.5px solid var(--color-2);
+}
+
+.landing-chapters-list-new li a {
+    color: var(--color-8);
+}
+
+/* Panel derecho (descripción) */
+.right-panel {
+    padding: 15px;
+}
+
+/* Botones adicionales */
+.landing-content-body-new .button-6,
+.landing-content-body-new .button-5 {
+    margin-top: 15px;
+    padding: 10px 25px;
+}
+
+@media (max-width: 768px) {
+    .landing-content-body-new .button-6,
+    .landing-content-body-new .button-5 {
+        width: 100%;
+    }
+}
+
+/* Proveedor */
+.landing-contentet-list-bottom-new {
+    line-height: 10px;
+    padding-top: 30px;
+    text-align: left;
+}
+
+/*Barra de progreso*/
+.progress-container {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 10px;/*Espacio entre la barra y el titulo*/
+    padding-bottom: 20px;/*Espacio entre la barra de progreso y la linea roja*/ /*dejar 30px es el original*/
+}
+
+.progress-bar {
+    height: 10px;/*Ancho de la barra*/
+    background-color: #E61A4F;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+.locked {
+    color: #888;
+    cursor: not-allowed;
+}
+.locked i {
+    margin-left: 5px;
+}
+
+.right-panel {
+    max-height: 480px;
+    overflow-y: auto;
+}
+
+/* Remove any styles related to the old scrollbar */
+.landing-content-text-new {
+    overflow-y: visible;
+    max-height: none;
+}
+
+.progress-containerr {
+    width: 100%; /* Cambiado de 750px fijo a 100% */
+    max-width: 750px; /* Mantiene el ancho máximo original */
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+
+.progress-text {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+.progress-barr {
+    width: 100%;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #E61A4F;
+    transition: width 0.5s ease-in-out;
+}
+
+#lesson-list li {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#lesson-list li.locked {
+    color: #999;
+    cursor: not-allowed;
+}
+
+#lesson-list li.selected {
+    background-color: #f0f0f0;
+}
+
+.lock-icon {
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+#lesson-list li.locked .lock-icon {
+    opacity: 1;
+}
+
+#lesson-list li:not(.locked) .lock-icon {
+    opacity: 0;
+}
+
+#lesson-list li span {
+    flex-grow: 1;
+}
+
+#lesson-list li.unlocking {
+    animation: unlock 1s ease;
+}
+
+@keyframes unlock {
+    0% {
+        background-color: #f0f0f0;
+        transform: scale(1);
+    }
+    50% {
+        background-color: #ffe6e6;
+        transform: scale(1.05);
+    }
+    100% {
+        background-color: transparent;
+        transform: scale(1);
+    }
+}
+
+/*Recuadro de advertencia de modulo*/
+.modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px #E61A4F;
+        max-width: 400px;
+        text-align: center;
+        position: relative;
+        animation: modalAppear 0.3s ease-out;
+    }
+
+    @keyframes modalAppear {
+        from {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .modal-content h3 {
+        color: #E61A4F;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+
+    .modal-content p {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .modal-button {
+        background-color: #E61A4F;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .modal-button:hover {
+        background-color:  #ffffff;
+        border: 2.5px solid var(--color-2);
+        color: #E61A4F;
+    }
+
+    .warning-icon {
+        color: #e74c3c;
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+/* Ajuste del contenedor del título y barra de progreso */
+.landing-content-header-lesson-new {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    flex: 1;
+    width: 100%;
+}
+
+/* Ajustes para el título */
+#lesson-name {
+    width: 100%;
+    word-wrap: break-word; /* Permite que el texto largo se envuelva */
+    margin-bottom: 15px; /* Espacio entre el título y la barra de progreso */
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .progress-containerr {
+        width: 100%; /* En pantallas pequeñas, ocupa todo el ancho disponible */
+        max-width: 300px; /* Mantiene un máximo de 300px */
+        margin: 20px auto; /* Centra la barra y ajusta el margen superior */
+    }
+
+    .landing-content-header-lesson-new {
+        align-items: center; /* Centra los elementos en pantallas pequeñas */
+    }
+
+    #lesson-name {
+        text-align: center; /* Centra el texto del título en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .progress-containerr {
+        max-width: 250px; /* Reduce ligeramente el ancho máximo en pantallas muy pequeñas */
+        margin: 15px auto;
+    }
+}
+
+/* Media queries mejorados */
+@media (max-width: 1024px) {
+    .landing-content-header-buttons-new {
+        margin-top: 100px; /* Reduce el margen superior en tablets */
+    }
+    
+    .progress-containerr {
+        max-width: 600px; /* Ajusta el ancho máximo para tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .landing-content-header-buttons-new {
+        margin-top: 50px;
+        justify-content: center; /* Centra los botones en móviles */
+        width: 100%;
+        gap: 10px;
+    }
+
+    .landing-content-header-buttons-new .button-6,
+    .landing-content-header-buttons-new .button-6-new,
+    .landing-content-header-buttons-new .button-5 {
+        min-width: 120px; /* Reduce el ancho mínimo en móviles */
+        padding: 8px 20px; /* Ajusta el padding para mejor visualización */
+        font-size: 14px; /* Reduce ligeramente el tamaño de fuente */
+    }
+
+    .progress-containerr {
+        max-width: 400px;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing-content-header-buttons-new {
+        flex-direction: column; /* Apila los botones verticalmente */
+        align-items: stretch; /* Hace que los botones ocupen todo el ancho */
+        margin-top: 30px;
+    }
+
+    .landing-content-header-buttons-new .button-6,
+    .landing-content-header-buttons-new .button-6-new,
+    .landing-content-header-buttons-new .button-5 {
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .progress-containerr {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*------------------------Animacion burbujas--------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+#bol-1, #bol-2, #bol-4, #bol-5 {
+    position: fixed;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#bol-1 {
+    width: 400px;
+    height: auto;
+    top: 600px;
+    right: -100px;
+    filter: drop-shadow(2px 2px 12px rgba(0, 0, 0, 0.7));
+    animation: moveUpDown 7s ease-in infinite alternate;
+}
+
+/* Alineación a la derecha  */
+.right-align {
+    text-align: right;
+}
+
+/*--------------------------------------------------------------------------*/
+/*------------------------Seccion ayuda--------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+/* Estilos para la sección de ayuda */
+.help-hero {
+    background-color: #F8F9FA;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 6rem 0;
+}
+
+.help-shape-1,
+.help-shape-2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 0;
+}
+
+.help-shape-1 {
+    top: -100px;
+    right: -100px;
+}
+
+.help-shape-2 {
+    bottom: -100px;
+    left: -100px;
+}
+
+.help-card {
+    transition: transform 0.2s;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    border-radius: 1rem !important;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(230, 26, 79, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E61A4F;
+    flex-shrink: 0;
+}
+
+.icon-wrapper i {
+    font-size: 1.75rem;
+}
+
+.help-card:hover .icon-wrapper {
+    background-color: #E61A4F;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Estilos para el acordeón */
+.custom-accordion .accordion-button {
+    background-color: white;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 1.25rem;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    color: #E61A4F;
+    background-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(230, 26, 79, 0.15);
+}
+
+.custom-accordion .accordion-button::after {
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-accordion .accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg) scale(1.2);
+    color: #E61A4F;
+}
+
+.custom-accordion .accordion-collapse {
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-body {
+    padding: 1rem;
+    transform-origin: top;
+    animation: slideDown 0.6s ease forwards;
+}
+
+.custom-accordion .accordion-button:hover {
+    color: #E61A4F;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(230, 26, 79, 0.15);
+}
+
+.custom-accordion .accordion-button:focus {
+    border-color: #E61A4F;
+    box-shadow: 0 0 0 0.25rem rgba(230, 26, 79, 0.25);
+}
+
+/* Animaciones */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto ripple */
+.ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(230, 26, 79, 0.25);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rippleEffect 1s ease-out;
+}
+
+@keyframes rippleEffect {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.8;
+    }
+    100% {
+        width: 1000px;
+        height: 1000px;
+        opacity: 0;
+    }
+}
+
+/* Estilos de búsqueda */
+.search-wrapper .form-control {
+    padding: 1rem 3rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Estilos de espaciado */
+.container.py-8 {
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.py-9 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.section-spacing {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.section-spacing:last-child {
+    margin-bottom: 10rem;
+}
+
+/* Estilos del héroe */
+.bg-gradient-pink {
+    color: #fff;
+    background-image: linear-gradient(-35deg, var(--color-16), var(--color-17));
+    width: 100%;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos de resultados de búsqueda */
+#searchResults {
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.result-item {
+    transition: background-color 0.3s ease;
+}
+
+.result-item:hover {
+    background-color: #f8f9fa;
+}
+
+.result-item:last-child {
+    border-bottom: none !important;
+}
+
+/* Estilos de botones */
+.btn-outline-secondary {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Estilos para SweetAlert */
+.swal2-popup {
+    padding: 2rem;
+    width: 32em;
+}
+
+.swal2-title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #E61A4F;
+    box-shadow: 0 0 0 0.2rem rgba(230, 26, 79, 0.25);
+}
+
+.btn-custom-pink {
+    background-color: #E61A4F;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-pink:hover {
+    background-color: #d0193f;
+    color: white;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .section-spacing {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .help-hero {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .swal2-popup {
+        padding: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/*--------------------------------------------------------------------------*/
+/*------------------------Seccion ayuda-categoria--------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+/* Estilos para la página de categoría de ayuda */
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none !important;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.icon-wrapper {
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.custom-card:hover .icon-wrapper {
+    background-color: var(--color-2);
+}
+
+.custom-card:hover .icon-wrapper i {
+    color: var(--color-1) !important;
+}
+
+#hidden-articles .custom-card {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#hidden-articles.show .custom-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#hidden-articles.show .custom-card:hover {
+    transform: translateY(-5px);
+}
+
+.custom-card, .icon-wrapper, .custom-card i {
+    transition: all 0.3s ease;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--color-2), #7B1FA2);
+    padding: 80px 0;
+}
+
+.list-unstyled a:hover {
+    color: var(--color-2) !important;
+}
+
+.btn-outline-custom {
+    border-color: var(--color-2);
+    color: var(--color-2);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--color-2);
+    border-color: var(--color-2);
+    color: var(--color-1);
+}
+
+.btn-outline-custom:focus,
+.btn-outline-custom:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: var(--color-2);
+    border-color: var(--color-2);
+    color: var(--color-1);
+}
+
+.btn-outline-custom:active:focus {
+    background-color: var(--color-2) !important;
+    border-color: var(--color-2) !important;
+    color: var(--color-1) !important;
+}
+
+.sidebar-links .active {
+    color: var(--color-2) !important;
+    font-weight: 500;
+}
+
+.sidebar-links a:hover {
+    color: var(--color-2) !important;
+    transform: translateX(5px);
+}
+
+.sidebar-links a {
+    transition: all 0.3s ease;
+    padding: 8px 0;
+}
+
+.sidebar-links i {
+    width: 20px;
+    text-align: center;
+}
+
+.custom-card-body h3 span {
+    cursor: default;
+}
+
+.custom-card-body h3 span:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-toggle {
+    transition: transform 0.3s ease;
+}
+
+.btn-outline-custom:hover .icon-toggle {
+    transform: translateY(2px);
+}
+
+/* Asegurarse que los títulos mantengan Formula 1 */
+.hero-section h2,
+.custom-card-title,
+.section-spacing h2,
+.accordion-button {
+    font-family: 'Formula 1', sans-serif;
+}
+
+/* Aplicar Helvetica a los subtítulos y textos secundarios */
+.custom-card-text,
+.text-muted,
+.accordion-body p,
+.search-wrapper input,
+#searchResults,
+.lead {
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Específicamente para las cards de categorías */
+.help-card .custom-card-title {
+    font-family: 'Formula 1', sans-serif;
+}
+
+.help-card .custom-card-text {
+    font-family: 'Helvetica', sans-serif;
+}
+
