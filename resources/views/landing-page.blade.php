@@ -8,6 +8,13 @@
 
 @include('layouts.reCAPTCHA')
 
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/david.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/hottaco.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/loader.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/aos.css') }}">
+
+
 <!-- Get the section ID from sessionStorage -->
 <script src="{{ asset('js/scroll-to-landing.js') }}"></script>
 
