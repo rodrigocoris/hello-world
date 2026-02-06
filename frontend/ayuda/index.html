@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Load loader.css and loader.js --> 
+    <link rel="stylesheet" href="/css/loader.css">
+    <script src="/js/loader.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta blade values -->
+    <meta name="base-url" content="">
+    
+    <!-- Ensures optimal rendering on mobile devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google site verification -->
+    <meta name="google-site-verification" content="xiJ0-qMZ8qPLU_1fSE0KElcUWTcw_1fAhNjobBfRVTo" />
+
+    <!-- General Meta Tags -->
+    <meta name="csrf-token" content="L7SbvTG86VrEnjAh1MTaRQd6Va8UTaYbZQ11hEVc">
+    <meta name="base-url" content="">
+    <meta name="api-url" content="">
+
+    <title></title>
+
+    <!-- Add Marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Add Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Add JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Add Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Add SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.2/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Add el JS y el CSS de ACE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.js"></script>
+
+    <!-- Add Vanilla Calendar Pro -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js" defer></script>
+
+    <!-- Add AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Add Tippy.js -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+
+    <!-- reCAPTCHA V3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcabBkqAAAAAOvCKM8dQL1tUcR0lYGWOkKs7Yx8"></script>
+    
+    <!-- Scripts Section -->
+    <script src="/js/main.js"></script>
+    <script src="/js/copy-code-to-clipboard.js"></script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9040768563286183" crossorigin="anonymous"></script>
+
+    <!-- Add Estilo CSS -->
+    <link rel="stylesheet" href="/css/david.css">
+    <link rel="stylesheet" href="/css/hottaco.css">
+    <link rel="stylesheet" href="/css/rodri.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/assets/animate/animate.css">
+    <link rel="stylesheet" href="/assets/select2/select2.min.css">
+    <link rel="stylesheet" href="/assets/perfect-scrollbar/perfect-scrollbar.css">
+
+    
+    
+    
+    
+    </head>
+<body>
+    <!-- Terminal Loader Section -->
+    <div class="container-terminal-loader" id="terminalLoader">
+        <div class="terminal-loader">
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+                </div>
+                <div class="terminal-title"><span>www.helloworld.com.mx/</span>ayuda.html</div>
+            </div>
+            <div class="text">Cargando...</div>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+    <div class="modal-background"></div>
+
+    <div class="lateral-menu">
+        <div class="lateral-menu-container">
+            <ul>
+                                                                            <li><a href="javascript:redirectToWithScroll(``, 'inicio');">Inicio</a></li>
+                                                                                <li><a href="javascript:redirectToWithScroll(``, 'explora');">Explora</a></li>
+                                                                                <li><a href="javascript:redirectToWithScroll(``, 'practica');">Practica</a></li>
+                                                                                <li><a href="javascript:redirectToWithScroll(``, 'contenido');">Contenido</a></li>
+                                        
+                            </ul>
+            <ul>
+                                    <li><button class="button-2 mb-0" onclick="redirectTo(`/iniciar-sesion`)">Iniciar sesión</button></li>
+                    <li><button class="button-2 mt-0" onclick="redirectTo(`/registrarse`)"><i class="fa-solid fa-right-to-bracket"></i> Registrarse</button></li>
+                                <li><a href="/planes">Planes</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/nosotros">Nosotros</a></li>
+                <li><a href="/ayuda">Ayuda</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-info-top">
+            <ul>
+                                    <li><button class="button-4" onclick="redirectTo(`/registrarse`)"><i class="fa-solid fa-right-to-bracket pe-1"></i> Registrarse</button></li>
+                    <li><button class="button-1" onclick="redirectTo(`/iniciar-sesion`)">Iniciar sesión</button></li>
+                                <li style="font-size: 26px; font-weight: normal; margin-top: -1px;">|</li>
+                <li><a href="/ayuda">Ayuda</a></li>
+                <li><a href="/nosotros">Nosotros</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/planes">Planes</a></li>
+            </ul>
+            <i class="fa-solid fa-caret-up triangle"></i>
+        </div>
+        <div class="nav-info-bottom">
+            <div class="info-bottom">
+                <div class="lateral-menu-button">
+                    <div class="menu-toggle first">
+                        <i></i>
+                    </div>
+                </div>
+                <div class="logo-container">
+                    <a href="/inicio">
+                        <div class="logo-container-span">
+                            <img src="/images/Hello-World-Logo.png" class="logo-nav-bar" alt="Hello World Logo">
+                            <span id="hello-world"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom-buttons">
+                    <ul>
+                                                                                    <li><a href="javascript:redirectToWithScroll(``, 'inicio');">Inicio</a></li>
+                                                                                                                <li><a href="javascript:redirectToWithScroll(``, 'explora');">Explora</a></li>
+                                                                                                                <li><a href="javascript:redirectToWithScroll(``, 'practica');">Practica</a></li>
+                                                                                                                <li><a href="javascript:redirectToWithScroll(``, 'contenido');">Contenido</a></li>
+                                                                                                </ul>
+                </div>
+            </div>
+        </div>        
+    </nav>
+    <div class="separador-nav"></div>
+
+    <!-- Content Section -->
+    
+
+<script>
+    $(document).ready(function() {
+        grecaptcha.ready(function() {
+            grecaptcha.execute("", {
+                action: 'submit'
+                }).then(function(captcha_token) {
+                $('#reCAPTCHA-form').prepend(`<input type="hidden" name="captcha_token" value="${captcha_token}">`);
+            });
+        });
+    });
+</script>
+<img src="/images/figures/square-1.png" id="bol-1">
+<img src="/images/figures/square-2.png" id="square-2">
+
+    <!-- Hero Section -->
+    <div class="hero-section bg-gradient-pink">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-5 fw-semibold mb-4 text-white">¿Cómo podemos ayudarte?</h2>
+                    <div class="search-wrapper position-relative">
+                        <input type="text" 
+                            id="searchInput" 
+                            class="form-control form-control-lg rounded-pill ps-5" 
+                            placeholder="🔍 Buscar">
+                        <i class="bi bi-search position-absolute top-50 translate-middle-y ms-3"></i>
+                        
+                        <!-- Resultados de búsqueda -->
+                        <div id="searchResults" class="position-absolute w-100 mt-2 rounded-3 bg-white shadow-sm d-none">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Grid -->
+    <div class="container" style="margin-top: 80px;">
+        <div class="row g-4 px-4 px-md-5">
+            <div class="col-lg-10 col-md-12 mx-auto">
+                <div class="row g-4">
+                                        <div class="col-lg-6 col-md-6">
+                        <a href="/categoria/%C2%BFC%C3%B3mo+empezar%3F/Registrar+una+cuenta+en+Hello+World" 
+                        class="text-decoration-none">
+                            <div class="card custom-card help-card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="icon-wrapper me-3">
+                                        <i class="fas fa-user-plus fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title h5 mb-1">¿Cómo empezar?</h4>
+                                        <p class="card-text text-muted mb-0">Registrar una cuenta en Hello World</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-6 col-md-6">
+                        <a href="/categoria/Ejercicios/Empezar+a+practicar+en+los+ejercicios" 
+                        class="text-decoration-none">
+                            <div class="card custom-card help-card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="icon-wrapper me-3">
+                                        <i class="fas fa-code fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title h5 mb-1">Ejercicios</h4>
+                                        <p class="card-text text-muted mb-0">Empezar a practicar en los ejercicios</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-6 col-md-6">
+                        <a href="/categoria/Asistente+Virtual/Respuestas+a+tus+dudas+sobre+tu+codigo" 
+                        class="text-decoration-none">
+                            <div class="card custom-card help-card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="icon-wrapper me-3">
+                                        <i class="fas fa-robot fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title h5 mb-1">Asistente Virtual</h4>
+                                        <p class="card-text text-muted mb-0">Respuestas a tus dudas sobre tu codigo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-6 col-md-6">
+                        <a href="/categoria/Compilador/Compilacion+de+tu+codigo+en+tiempo+real" 
+                        class="text-decoration-none">
+                            <div class="card custom-card help-card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="icon-wrapper me-3">
+                                        <i class="fas fa-terminal fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title h5 mb-1">Compilador</h4>
+                                        <p class="card-text text-muted mb-0">Compilacion de tu codigo en tiempo real</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-6 col-md-6">
+                        <a href="/categoria/Seguridad/Proteccion+de+datos" 
+                        class="text-decoration-none">
+                            <div class="card custom-card help-card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="icon-wrapper me-3">
+                                        <i class="fas fa-shield-alt fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title h5 mb-1">Seguridad</h4>
+                                        <p class="card-text text-muted mb-0">Proteccion de datos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-6 col-md-6">
+                        <a href="/categoria/Planes/Metodos+de+pago+de+Hello+World" 
+                        class="text-decoration-none">
+                            <div class="card custom-card help-card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="icon-wrapper me-3">
+                                        <i class="fas fa-crown fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title h5 mb-1">Planes</h4>
+                                        <p class="card-text text-muted mb-0">Metodos de pago de Hello World</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-6 col-md-6">
+                        <a href="/categoria/Perfil/Configura+tu+perfil" 
+                        class="text-decoration-none">
+                            <div class="card custom-card help-card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="icon-wrapper me-3">
+                                        <i class="fas fa-user-cog fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title h5 mb-1">Perfil</h4>
+                                        <p class="card-text text-muted mb-0">Configura tu perfil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-6 col-md-6">
+                        <a href="/categoria/Soporte/Comunicate+con+nuestro+equipo" 
+                        class="text-decoration-none">
+                            <div class="card custom-card help-card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="icon-wrapper me-3">
+                                        <i class="fas fa-headset fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title h5 mb-1">Soporte</h4>
+                                        <p class="card-text text-muted mb-0">Comunicate con nuestro equipo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container section-spacing">
+        <div class="row justify-content-center mb-6">
+            <div class="col-lg-6 text-center">
+                <h2 class="fw-bold mb-4">Preguntas frecuentes</h2>
+                <p class="text-muted">Todo lo que necesita saber sobre Hello World</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion custom-accordion" id="faqAccordion">
+                                        <div class="accordion-item border-0 mb-3">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-sm rounded" 
+                                    type="button" 
+                                    onclick="toggleAccordion(0)">
+                                ¿Si soy estudiante de CETI puedo tener todos los beneficios de una suscripcion VIP?
+                            </button>
+                        </h3>
+                        <div id="faq0" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+                                <p class="text-muted mb-0">Sí, Hello World ofrece una suscripcion gratuita para estudiantes de CETI. Ademas de que puedes registrarte con tu correo institucional.</p>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="accordion-item border-0 mb-3">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-sm rounded" 
+                                    type="button" 
+                                    onclick="toggleAccordion(1)">
+                                ¿Puedo cambiar mi plan más tarde?
+                            </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+                                <p class="text-muted mb-0">¡Sí! Puede actualizar o cambiar su plan en cualquier momento desde la configuración de su cuenta.</p>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="accordion-item border-0 mb-3">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-sm rounded" 
+                                    type="button" 
+                                    onclick="toggleAccordion(2)">
+                                ¿Qué lenguajes de programación puedo aprender en Hello World?
+                            </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+                                <p class="text-muted mb-0">Actualmente solo ofrecemos módulos en C++ pero contamos con nuevos lenguajes en desarrollo como Python, Java y más</p>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="accordion-item border-0 mb-3">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-sm rounded" 
+                                    type="button" 
+                                    onclick="toggleAccordion(3)">
+                                ¿Los ejercicios tienen un límite de tiempo para completarse?
+                            </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+                                <p class="text-muted mb-0">No, puedes completar los ejercicios a tu propio ritmo.</p>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="accordion-item border-0 mb-3">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-sm rounded" 
+                                    type="button" 
+                                    onclick="toggleAccordion(4)">
+                                ¿Qué pasa si encuentro un error en mi código o no entiendo un ejercicio?
+                            </button>
+                        </h3>
+                        <div id="faq4" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+                                <p class="text-muted mb-0">Puedes usar la asistencia inteligente que te da pistas sobre cómo corregir los errores, además de consultar la sección de contenido</p>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Still Have Questions Section con espacio adicional -->
+    <div class="container section-spacing mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <h2 class="fw-bold mb-4">¿Tiene alguna pregunta?</h2>
+                <p class="text-muted mb-5">¿No encuentra la respuesta que estas buscando? Por favor, comunicate con nuestro equipo de soporte.</p>
+                <a href="/contacto" class="button-6">Ponerse en contacto</a>
+            </div>
+        </div>
+    </div>
+
+<script src="/js/help.js"></script>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Contacto</h3>
+                <p>¿Tienes preguntas?</p>
+                <button onclick="redirectTo(`/contacto`)" class="button-3" style="margin: 45px 0; height: 58px;">Formulario de contacto</button>
+            </div>
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Redes Sociales</h3>
+                <p>Ponte en contacto con nosotros a través de las redes sociales.</p>
+                <div class="row-social">
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.facebook.com/profile.php?id=61559612453689`)"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.instagram.com/hello_w0rld_dev/`)"><i class="fa-brands fa-instagram"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://twitter.com/HelloWorldMx`)"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.youtube.com/channel/UCeT5varh-07VRRhHi4MIx2g`)"><i class="fa-brands fa-youtube"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.patreon.com/HelloWorld346`)"><i class="fa-brands fa-patreon"></i></button>
+                </div>
+            </div>
+            <div class="footer-column f-del"></div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Empresa</h3>
+                <ul style="padding: 0;">
+                    <li><a href="/nosotros">Acerca de nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Aviso de Privacidad</h3>
+                <ul style="padding: 0;">
+                    <li><a href="/terminos-de-servicio">Términos de servicio</a></li>
+                    <li><a href="/politicas-de-privacidad">Políticas de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-column f-del"></div>
+        </div>
+    </footer>    
+      
+    <!-- Scripts Section -->
+    <script src="/js/use_strict.js"></script>
+    <script src="/js/david.js"></script>
+
+    
+    
+    
+    
+    
+    <!-- Initialize AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize Tippy.js -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

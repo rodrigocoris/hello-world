@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Load loader.css and loader.js --> 
+    <link rel="stylesheet" href="/css/loader.css">
+    <script src="/js/loader.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta blade values -->
+    <meta name="base-url" content="">
+    
+    <!-- Ensures optimal rendering on mobile devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google site verification -->
+    <meta name="google-site-verification" content="xiJ0-qMZ8qPLU_1fSE0KElcUWTcw_1fAhNjobBfRVTo" />
+
+    <!-- General Meta Tags -->
+    <meta name="csrf-token" content="t2vsTt6GtSyztxJTZsmP4R8Xf0L69emlQNbJei6N">
+    <meta name="base-url" content="">
+    <meta name="api-url" content="">
+
+    <title>Hello World - Planes</title>
+
+    <!-- Add Marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Add Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Add JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Add Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Add SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.2/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Add el JS y el CSS de ACE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.js"></script>
+
+    <!-- Add Vanilla Calendar Pro -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js" defer></script>
+
+    <!-- Add AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Add Tippy.js -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+
+    <!-- reCAPTCHA V3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcabBkqAAAAAOvCKM8dQL1tUcR0lYGWOkKs7Yx8"></script>
+    
+    <!-- Scripts Section -->
+    <script src="/js/main.js"></script>
+    <script src="/js/copy-code-to-clipboard.js"></script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9040768563286183" crossorigin="anonymous"></script>
+
+    <!-- Add Estilo CSS -->
+    <link rel="stylesheet" href="/css/david.css">
+    <link rel="stylesheet" href="/css/hottaco.css">
+    <link rel="stylesheet" href="/css/rodri.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/assets/animate/animate.css">
+    <link rel="stylesheet" href="/assets/select2/select2.min.css">
+    <link rel="stylesheet" href="/assets/perfect-scrollbar/perfect-scrollbar.css">
+
+            <link rel="stylesheet" href="/css/f-table.css">
+        <link rel="stylesheet" href="/css/until.css">
+    
+    
+    
+    
+    </head>
+<body>
+    <!-- Terminal Loader Section -->
+    <div class="container-terminal-loader" id="terminalLoader">
+        <div class="terminal-loader">
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+                </div>
+                <div class="terminal-title"><span>www.helloworld.com.mx/</span>planes.html</div>
+            </div>
+            <div class="text">Cargando...</div>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+    <div class="modal-background"></div>
+
+    <div class="lateral-menu">
+        <div class="lateral-menu-container">
+            <ul>
+                                                                            <li><a href="javascript:redirectToWithScroll(``, 'inicio');">Inicio</a></li>
+                                                                                <li><a href="javascript:redirectToWithScroll(``, 'explora');">Explora</a></li>
+                                                                                <li><a href="javascript:redirectToWithScroll(``, 'practica');">Practica</a></li>
+                                                                                <li><a href="javascript:redirectToWithScroll(``, 'contenido');">Contenido</a></li>
+                                        
+                            </ul>
+            <ul>
+                                    <li><button class="button-2 mb-0" onclick="redirectTo(`/iniciar-sesion`)">Iniciar sesión</button></li>
+                    <li><button class="button-2 mt-0" onclick="redirectTo(`/registrarse`)"><i class="fa-solid fa-right-to-bracket"></i> Registrarse</button></li>
+                                <li><a href="/planes">Planes</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/nosotros">Nosotros</a></li>
+                <li><a href="/ayuda">Ayuda</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-info-top">
+            <ul>
+                                    <li><button class="button-4" onclick="redirectTo(`/registrarse`)"><i class="fa-solid fa-right-to-bracket pe-1"></i> Registrarse</button></li>
+                    <li><button class="button-1" onclick="redirectTo(`/iniciar-sesion`)">Iniciar sesión</button></li>
+                                <li style="font-size: 26px; font-weight: normal; margin-top: -1px;">|</li>
+                <li><a href="/ayuda">Ayuda</a></li>
+                <li><a href="/nosotros">Nosotros</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/planes">Planes</a></li>
+            </ul>
+            <i class="fa-solid fa-caret-up triangle"></i>
+        </div>
+        <div class="nav-info-bottom">
+            <div class="info-bottom">
+                <div class="lateral-menu-button">
+                    <div class="menu-toggle first">
+                        <i></i>
+                    </div>
+                </div>
+                <div class="logo-container">
+                    <a href="/inicio">
+                        <div class="logo-container-span">
+                            <img src="/images/Hello-World-Logo.png" class="logo-nav-bar" alt="Hello World Logo">
+                            <span id="hello-world"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom-buttons">
+                    <ul>
+                                                                                    <li><a href="javascript:redirectToWithScroll(``, 'inicio');">Inicio</a></li>
+                                                                                                                <li><a href="javascript:redirectToWithScroll(``, 'explora');">Explora</a></li>
+                                                                                                                <li><a href="javascript:redirectToWithScroll(``, 'practica');">Practica</a></li>
+                                                                                                                <li><a href="javascript:redirectToWithScroll(``, 'contenido');">Contenido</a></li>
+                                                                                                </ul>
+                </div>
+            </div>
+        </div>        
+    </nav>
+    <div class="separador-nav"></div>
+
+    <!-- Content Section -->
+    
+
+<script>
+    $(document).ready(function() {
+        grecaptcha.ready(function() {
+            grecaptcha.execute("", {
+                action: 'submit'
+                }).then(function(captcha_token) {
+                $('#reCAPTCHA-form').prepend(`<input type="hidden" name="captcha_token" value="${captcha_token}">`);
+            });
+        });
+    });
+</script>
+<main class="main-container">
+    <!-- Background figures -->
+    <img src="/images/figures/square-2.png" id="square-4">
+    <img src="/images/figures/square-1.png" id="square-5">
+
+    <section class="section-landingpage mg-bottom-75 pt-lg-5">
+        <h1 class="h1-inter pd-h1 center-text">Selecciona el plan perfecto para tí</h1>
+        <div class="container-plan-comparison" id="plans-container">
+            <!-- Planes se cargarán aquí dinámicamente -->
+        </div>
+    </section>
+
+    <h2 class="h2-inter text-center">Comparación de los Planes</h2>
+    <section class="container-table100">
+        <div class="wrap-table100">
+            <div class="table100">
+                <table>
+                    <thead>
+                        <tr class="table100-head">
+                            <th></th>
+                            <th>
+                                <div class="container-thead-plan">
+                                    <h4>Básico</h4>
+                                    <p><span class="color-2">$0.00</span> USD / De por vida</p>
+                                </div>
+                                <div class="container-button-thead" id="basic-thead-button">
+                                    <button type="button" onclick="redirectToWithScroll(`/registrarse, ${1}`)" class="button-12 ff-Inter fw-bolder">¡Empezar ahora!</button>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="container-thead-plan">
+                                    <h4>VIP</h4>
+                                    <p><span class="color-2" id="vip-thead-price">$7.99</span> USD / <span id="vip-thead-duration">Mes</span></p>
+                                </div>
+                                <div class="container-button-thead" id="vip-thead-button">
+                                    <button type="button" onclick="redirectToWithScroll(`/registrarse, ${2}`)" class="button-15 ff-Inter fw-bolder">¡Empezar ahora!</button>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="container-thead-plan">
+                                    <h4>Organizacional</h4>
+                                    <p><span class="color-2">$699.99</span> USD / Año</p>
+                                </div>
+                                <div class="container-button-thead" id="org-thead-button">
+                                    <button type="button" onclick="redirectToWithScroll(`/registrarse, ${3}`)" class="button-12 ff-Inter fw-bolder">¡Empezar ahora!</button>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="desciption-table-plan">Compilación en tiempo real</td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Sin anuncios</td>
+                            <td><b>-</b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Ejercicios por día</td>
+                            <td><b>Limitados</b></td>
+                            <td><b>Ilimitados</b></td>
+                            <td><b>Ilimitados</b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Asistente virtual</td>
+                            <td><b>Limitados</b></td>
+                            <td><b>Ilimitados</b></td>
+                            <td><b>Ilimitados</b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Calidad del asistente virtual</td>
+                            <td><b>Básica</b></td>
+                            <td><b>Alta</b></td>
+                            <td><b>Alta</b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Revision de código con IA</td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Pistas por ejercicio</td>
+                            <td><b>1</b></td>
+                            <td><b>3</b></td>
+                            <td><b>3</b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Acceso a soluciones comunitarias</td>
+                            <td><b>Limitado</b></td>
+                            <td><b>Ilimitado</b></td>
+                            <td><b>Ilimitado</b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Acceso a todas las lecciones</td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Contenido actualizado</td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Facil explicación de ejercicios</td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Acceso a explicaciones gráficas</td>
+                            <td><b>-</b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Asociar múltiples licencias</td>
+                            <td><b>-</b></td>
+                            <td><b>-</b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                        </tr>
+                        <tr>
+                            <td class="desciption-table-plan">Asistencia prioritaria</td>
+                            <td><b>-</b></td>
+                            <td><b>-</b></td>
+                            <td><b><i class="fa-solid fa-check color-2"></i></b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    var plansURL = "/api/v1/subscription-plans";
+</script>
+<script src="/js/render-plans.js"></script>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Contacto</h3>
+                <p>¿Tienes preguntas?</p>
+                <button onclick="redirectTo(`/contacto`)" class="button-3" style="margin: 45px 0; height: 58px;">Formulario de contacto</button>
+            </div>
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Redes Sociales</h3>
+                <p>Ponte en contacto con nosotros a través de las redes sociales.</p>
+                <div class="row-social">
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.facebook.com/profile.php?id=61559612453689`)"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.instagram.com/hello_w0rld_dev/`)"><i class="fa-brands fa-instagram"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://twitter.com/HelloWorldMx`)"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.youtube.com/channel/UCeT5varh-07VRRhHi4MIx2g`)"><i class="fa-brands fa-youtube"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.patreon.com/HelloWorld346`)"><i class="fa-brands fa-patreon"></i></button>
+                </div>
+            </div>
+            <div class="footer-column f-del"></div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Empresa</h3>
+                <ul style="padding: 0;">
+                    <li><a href="/nosotros">Acerca de nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Aviso de Privacidad</h3>
+                <ul style="padding: 0;">
+                    <li><a href="/terminos-de-servicio">Términos de servicio</a></li>
+                    <li><a href="/politicas-de-privacidad">Políticas de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-column f-del"></div>
+        </div>
+    </footer>    
+      
+    <!-- Scripts Section -->
+    <script src="/js/use_strict.js"></script>
+    <script src="/js/david.js"></script>
+
+    
+    
+            <script src="/assets/select2/select2.min.js"></script>
+        <script src="/js/f-table.js"></script>
+    
+    
+    
+    <!-- Initialize AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize Tippy.js -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
