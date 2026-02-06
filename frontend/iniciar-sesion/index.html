@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Load loader.css and loader.js --> 
+    <link rel="stylesheet" href="/css/loader.css">
+    <script src="/js/loader.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta blade values -->
+    <meta name="base-url" content="">
+    
+    <!-- Ensures optimal rendering on mobile devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google site verification -->
+    <meta name="google-site-verification" content="xiJ0-qMZ8qPLU_1fSE0KElcUWTcw_1fAhNjobBfRVTo" />
+
+    <!-- General Meta Tags -->
+    <meta name="csrf-token" content="YdEqd71a8mBJqC9xT8VxhshODoZD5cNGGvNGrs66">
+    <meta name="base-url" content="">
+    <meta name="api-url" content="">
+
+    <title>Hello World - Iniciar sesión</title>
+
+    <!-- Add Marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Add Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Add JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Add Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Add SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.2/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Add el JS y el CSS de ACE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.js"></script>
+
+    <!-- Add Vanilla Calendar Pro -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js" defer></script>
+
+    <!-- Add AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Add Tippy.js -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+
+    <!-- reCAPTCHA V3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcabBkqAAAAAOvCKM8dQL1tUcR0lYGWOkKs7Yx8"></script>
+    
+    <!-- Scripts Section -->
+    <script src="/js/main.js"></script>
+    <script src="/js/copy-code-to-clipboard.js"></script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9040768563286183" crossorigin="anonymous"></script>
+
+    <!-- Add Estilo CSS -->
+    <link rel="stylesheet" href="/css/david.css">
+    <link rel="stylesheet" href="/css/hottaco.css">
+    <link rel="stylesheet" href="/css/rodri.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/assets/animate/animate.css">
+    <link rel="stylesheet" href="/assets/select2/select2.min.css">
+    <link rel="stylesheet" href="/assets/perfect-scrollbar/perfect-scrollbar.css">
+
+    
+    
+    
+    
+    </head>
+<body>
+    <!-- Terminal Loader Section -->
+    <div class="container-terminal-loader" id="terminalLoader">
+        <div class="terminal-loader">
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+                </div>
+                <div class="terminal-title"><span>www.helloworld.com.mx/</span>iniciar-sesion.html</div>
+            </div>
+            <div class="text">Cargando...</div>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+    <div class="modal-background"></div>
+
+    <div class="lateral-menu">
+        <div class="lateral-menu-container">
+            <ul>
+                                                                            <li><a href="javascript:redirectToWithScroll(``, 'inicio');">Inicio</a></li>
+                                                                                <li><a href="javascript:redirectToWithScroll(``, 'explora');">Explora</a></li>
+                                                                                <li><a href="javascript:redirectToWithScroll(``, 'practica');">Practica</a></li>
+                                                                                <li><a href="javascript:redirectToWithScroll(``, 'contenido');">Contenido</a></li>
+                                        
+                            </ul>
+            <ul>
+                                    <li><button class="button-2 mb-0" onclick="redirectTo(`/iniciar-sesion`)">Iniciar sesión</button></li>
+                    <li><button class="button-2 mt-0" onclick="redirectTo(`/registrarse`)"><i class="fa-solid fa-right-to-bracket"></i> Registrarse</button></li>
+                                <li><a href="/planes">Planes</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/nosotros">Nosotros</a></li>
+                <li><a href="/ayuda">Ayuda</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-info-top">
+            <ul>
+                                    <li><button class="button-4" onclick="redirectTo(`/registrarse`)"><i class="fa-solid fa-right-to-bracket pe-1"></i> Registrarse</button></li>
+                    <li><button class="button-1" onclick="redirectTo(`/iniciar-sesion`)">Iniciar sesión</button></li>
+                                <li style="font-size: 26px; font-weight: normal; margin-top: -1px;">|</li>
+                <li><a href="/ayuda">Ayuda</a></li>
+                <li><a href="/nosotros">Nosotros</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/planes">Planes</a></li>
+            </ul>
+            <i class="fa-solid fa-caret-up triangle"></i>
+        </div>
+        <div class="nav-info-bottom">
+            <div class="info-bottom">
+                <div class="lateral-menu-button">
+                    <div class="menu-toggle first">
+                        <i></i>
+                    </div>
+                </div>
+                <div class="logo-container">
+                    <a href="/inicio">
+                        <div class="logo-container-span">
+                            <img src="/images/Hello-World-Logo.png" class="logo-nav-bar" alt="Hello World Logo">
+                            <span id="hello-world"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom-buttons">
+                    <ul>
+                                                                                    <li><a href="javascript:redirectToWithScroll(``, 'inicio');">Inicio</a></li>
+                                                                                                                <li><a href="javascript:redirectToWithScroll(``, 'explora');">Explora</a></li>
+                                                                                                                <li><a href="javascript:redirectToWithScroll(``, 'practica');">Practica</a></li>
+                                                                                                                <li><a href="javascript:redirectToWithScroll(``, 'contenido');">Contenido</a></li>
+                                                                                                </ul>
+                </div>
+            </div>
+        </div>        
+    </nav>
+    <div class="separador-nav"></div>
+
+    <!-- Content Section -->
+    
+
+<script>
+    $(document).ready(function() {
+        grecaptcha.ready(function() {
+            grecaptcha.execute("", {
+                action: 'submit'
+                }).then(function(captcha_token) {
+                $('#reCAPTCHA-form').prepend(`<input type="hidden" name="captcha_token" value="${captcha_token}">`);
+            });
+        });
+    });
+</script>
+<main class="container-login">
+    <!-- Background figures -->
+    <img src="/images/figures/square-2.png" id="square-4">
+    <img src="/images/figures/square-1.png" id="square-5">
+    
+    <div class="container-login-structure">
+        <section class="container-login-box">
+            <div class="container-login-form">
+                <div class="login-form">
+                    <form action="/iniciar-sesion" method="post" class="needs-validation" id="reCAPTCHA-form" novalidate>
+                        <input type="hidden" name="_token" value="YdEqd71a8mBJqC9xT8VxhshODoZD5cNGGvNGrs66" autocomplete="off">                        <h2>Iniciar sesión con</h2>
+                        <!-- Botón para registrarte con Google -->
+                        <button type="button" onclick="redirectTo(`/login-google`)" class="button-1" style="padding: 11px; margin-left: 5px; margin-right: 5px; border-width: 2px; margin-top: 15px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                                <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                                <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path>
+                                <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path>
+                                <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                            </svg>
+                        </button>
+                        <!-- Botón para registrarte con GitHub -->
+                        <button type="button" onclick="redirectTo(`/login-github`)" class="button-8 git-btn" style="padding: 11px; margin-left: 5px; margin-right: 5px; border-width: 2px; margin-top: 15px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+                                <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+                            </svg>
+                        </button>
+                        <!-- Botón para registrarte con Ceti -->
+                        <button type="button" onclick="redirectTo(`/login-ceti`)" class="button-1" style="padding: 11px; margin-left: 5px; border-width: 2px; margin-top: 15px;">
+                            <img src="https://assets.helloworld.com.mx/assets/logo-ceti.svg" alt="Logo CETI" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        </button>
+                        <div class="separator-container mt-4">
+                            <div class="separator-line"></div>
+                            <b class="separator-text"> O </b>
+                            <div class="separator-line"></div>
+                        </div>             
+                        <div class="col-md-12 mg-top-15">
+                            <div class="form-floating mb-3 mb-md-0">
+                                <input class="form-control" id="email" name="email" type="email" placeholder="" value="" autocomplete="off" title="Por favor, introduce tu nombre de usuario o correo electrónico." required/>
+                                <label for="email">Correo electrónico</label>
+                                <div class="invalid-feedback">
+                                    Por favor, introduce tu correo electronico.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mg-top-25">
+                            <div class="form-floating mb-3 mb-md-0">
+                                <div class="show-password-container">
+                                    <label for="show-password">
+                                        <input type="checkbox" id="show-password" class="show-password" name="show-password">
+                                        <i class="fa-solid fa-eye-slash"></i>
+                                    </label>
+                                </div>
+                                <input class="form-control" id="password" name="password" type="password" placeholder="" value="" autocomplete="off" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" title="Debe contener al menos 8 caracteres, al menos una letra mayúscula (A-Z), al menos un dígito (0-9) y al menos un carácter especial (por ejemplo: !, @, #, $, %, ^, &, *)" required/>
+                                <label for="password">Contraseña</label>
+                                <div class="invalid-feedback">
+                                    La contraseña debe ser mayor a 8 caracteres, al menos una letra mayúscula, al menos un dígito y al menos uno de estos carácteres especiales (!, @, #, $, %, ^, &, *).
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mg-top-25">¿Olvidaste tu <a class="simple-a" href="/recuperar-contraseña">contraseña</a>?</p>
+                        <button type="submit" class="button-8 g-recaptcha" style="margin-right: 5px;" id="enter">Iniciar sesión</button>
+                    </form>
+                </div>
+            </div>
+            <div class="gradiant-login" data-aos="fade-left" data-aos-duration="1000">
+                <div class="container-info-gradiant">
+                    <h2>¿Nuevo en Hello World?</h2>
+                    <h2>¡Regístrate gratis!</h2>
+                    <button class="button-7 mg-top-25" onclick="redirectTo(`/registrarse`)">Registrarse</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Contacto</h3>
+                <p>¿Tienes preguntas?</p>
+                <button onclick="redirectTo(`/contacto`)" class="button-3" style="margin: 45px 0; height: 58px;">Formulario de contacto</button>
+            </div>
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Redes Sociales</h3>
+                <p>Ponte en contacto con nosotros a través de las redes sociales.</p>
+                <div class="row-social">
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.facebook.com/profile.php?id=61559612453689`)"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.instagram.com/hello_w0rld_dev/`)"><i class="fa-brands fa-instagram"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://twitter.com/HelloWorldMx`)"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.youtube.com/channel/UCeT5varh-07VRRhHi4MIx2g`)"><i class="fa-brands fa-youtube"></i></button>
+                    <button class="button-3 nb" style="margin: 20px 0;" onclick="redirectToBlank(`https://www.patreon.com/HelloWorld346`)"><i class="fa-brands fa-patreon"></i></button>
+                </div>
+            </div>
+            <div class="footer-column f-del"></div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Empresa</h3>
+                <ul style="padding: 0;">
+                    <li><a href="/nosotros">Acerca de nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="line-height: 40px;">Aviso de Privacidad</h3>
+                <ul style="padding: 0;">
+                    <li><a href="/terminos-de-servicio">Términos de servicio</a></li>
+                    <li><a href="/politicas-de-privacidad">Políticas de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-column f-del"></div>
+        </div>
+    </footer>    
+      
+    <!-- Scripts Section -->
+    <script src="/js/use_strict.js"></script>
+    <script src="/js/david.js"></script>
+
+            <script src="/js/show-password.js"></script>
+    
+    
+    
+    
+    
+    <!-- Initialize AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize Tippy.js -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
