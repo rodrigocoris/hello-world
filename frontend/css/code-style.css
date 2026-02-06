@@ -1,0 +1,116 @@
+/* Estilo general para el bloque de código */
+.exercise-pre {
+    background-color: #202020;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+}
+
+/* Estilo para el texto general */
+.exercise-code {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.exercise-h1, .exercise-h2, .exercise-h3, .exercise-h4, .exercise-h5 {
+    color: #f8f8f2;
+    font-weight: bold;
+}
+
+.exercise-h1 {
+    font-size: 24px;
+}
+
+.exercise-h2 {
+    font-size: 20px;
+}
+
+.exercise-h3 {
+    font-size: 16px;
+}
+
+.exercise-h4 {
+    font-size: 14px;
+}
+
+.exercise-h5 {
+    font-size: 12px;
+}
+
+.exercise-p, .exercise-li, .exercise-span, .exercise-a, .exercise-div, .exercise-strong, .exercise-em, .exercise-b, .exercise-i, .exercise-blockquote, .exercise-pre, .exercise-code {
+    font-size: 16px;
+}
+
+
+.library {
+    color: #ae81ff;
+}
+
+/* Colores para las palabras clave */
+.keyword {
+    color: #E61A4F;
+}
+/* Colores para los tipos de datos */
+.datatype {
+    color: #5BD9EF;
+    font-style: italic;
+}
+/* Colores para las funciones */
+.function {
+    color: #5BD9EF;
+    font-style: italic;
+}
+/* Colores para las cadenas de texto */
+.string {
+    color: #e6db74;
+}
+/* Colores para los comentarios */
+.comment {
+    color: #75715e;
+}
+
+/* Colores para operadores y símbolos */
+.operator {
+    color: #f92672;
+}
+
+.number {
+    color: #ae81ff;
+}
+
+.boolean {
+    color: #ae81ff;
+}
+
+/* Colores para las variables */
+.variable {
+    color: #f8f8f2;
+}
+
+/* Estilo para las tablas */
+.exercise-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.exercise-th, .exercise-td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.exercise-th {
+    background-color: black;
+    font-weight: bold;
+}
+
+.exercise-tr:nth-child(even) {
+    background-color: black;
+}
+
+.exercise-tr:hover {
+    background-color: gray;
+}
